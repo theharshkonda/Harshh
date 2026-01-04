@@ -1,427 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harshvardhan Konda</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harshvardhan Konda | AWS Data Engineer</title>
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
-
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
+  <!-- GOOGLE FONT -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- INTERNAL CSS -->
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Poppins, sans-serif;
+    }
+
+    body {
+      background: #121212;
+      color: #ffffff;
+    }
+
+    .container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* SIDEBAR */
+    .sidebar {
+      width: 260px;
+      background: #1c1c1c;
+      padding: 20px;
+    }
+
+    .avatar {
+      width: 100px;
+      border-radius: 50%;
+      margin-bottom: 10px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #f5c542;
+      color: #000;
+      padding: 5px 12px;
+      border-radius: 20px;
+      margin: 10px 0;
+      font-size: 14px;
+    }
+
+    .contact {
+      margin-top: 20px;
+    }
+
+    .contact li {
+      list-style: none;
+      margin: 10px 0;
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    /* MAIN */
+    main {
+      flex: 1;
+      padding: 30px;
+    }
+
+    nav {
+      margin-bottom: 30px;
+    }
+
+    .nav-btn {
+      background: none;
+      border: none;
+      color: #aaa;
+      margin-right: 20px;
+      cursor: pointer;
+      font-size: 16px;
+      padding-bottom: 5px;
+    }
+
+    .nav-btn.active {
+      color: #f5c542;
+      border-bottom: 2px solid #f5c542;
+    }
+
+    /* SECTIONS */
+    .page {
+      display: none;
+    }
+
+    .page.active {
+      display: block;
+    }
+
+    h2 {
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      margin-top: 25px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #ccc;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    li {
+      margin-bottom: 8px;
+      color: #ccc;
+    }
+
+    /* CARDS */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+
+    .card {
+      background: #1f1f1f;
+      padding: 20px;
+      border-radius: 12px;
+    }
+  </style>
 </head>
 
 <body>
 
-  <!--
-    - #MAIN
-  -->
+<div class="container">
 
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <img src="avatar.png" class="avatar" alt="Avatar">
+    <h1>Harshvardhan Konda</h1>
+    <span class="badge">AWS Data Engineer</span>
+
+    <ul class="contact">
+      <li>📧 harshvardhankonda@gmail.com</li>
+      <li>📞 +91 9527728149</li>
+      <li>📍 Solapur, Maharashtra</li>
+      <li>🔗 LinkedIn</li>
+      <li>💻 GitHub</li>
+    </ul>
+  </aside>
+
+  <!-- MAIN CONTENT -->
   <main>
 
-    <!--
-      - #SIDEBAR
-    -->
+    <!-- NAVIGATION -->
+    <nav>
+      <button class="nav-btn active" data-target="about">About</button>
+      <button class="nav-btn" data-target="resume">Resume</button>
+      <button class="nav-btn" data-target="portfolio">Portfolio</button>
+      <button class="nav-btn" data-target="blog">Blog</button>
+      <button class="nav-btn" data-target="contact">Contact</button>
+    </nav>
 
-    <aside class="sidebar" data-sidebar>
+    <!-- ABOUT -->
+    <section id="about" class="page active">
+      <h2>About Me</h2>
+      <p>
+        AWS Data Engineer with 1.5+ years of experience building scalable data pipelines
+        using Python, SQL, PySpark, and AWS services including Glue, S3, Athena, and Redshift.
+      </p>
+      <p>
+        AWS Certified Solutions Architect Associate with strong expertise in ETL and ELT
+        development, data ingestion, transformation, and data quality validation.
+      </p>
 
-      <div class="sidebar-info">
-
-        <figure class="avatar-box">
-          <img src="./assets/images/my-avatar.png" alt="Harshvardhan Konda" width="80">
-        </figure>
-
-        <div class="info-content">
-          <h1 class="name" title="Harshvardhan Konda">Harshvardhan Konda</h1>
-
-          <p class="title">Data Engineer</p>
+      <h3>What I'm Doing</h3>
+      <div class="cards">
+        <div class="card">
+          <h4>ETL & Data Pipelines</h4>
+          <p>Designing scalable ETL and ELT pipelines using Python, PySpark, AWS Glue, and SQL.</p>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
+        <div class="card">
+          <h4>AWS Data Engineering</h4>
+          <p>S3, Glue, Athena, Redshift, Lambda, EMR, EC2, IAM, CloudWatch.</p>
+        </div>
+        <div class="card">
+          <h4>Data Quality & Optimization</h4>
+          <p>Validation, reconciliation logic, incremental processing, and performance tuning.</p>
+        </div>
       </div>
-
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:harshvardhankonda@gmail.com" class="contact-link">harshvardhankonda@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+919527728149" class="contact-link">+91 9527728149</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="location-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Location</p>
-
-              <address>Solapur, Maharashtra, India</address>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">LinkedIn</p>
-
-              <a href="#" class="contact-link">LinkedIn Profile</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-github"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">GitHub</p>
-
-              <a href="#" class="contact-link">GitHub Profile</a>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-        <ul class="social-list">
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-linkedin"></ion-icon>
-            </a>
-          </li>
-
-          <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-github"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-      </div>
-
-    </aside>
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Blog</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Contact</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-  <p>
-    AWS Data Engineer with 1.5+ years of experience building scalable data pipelines using Python, SQL, PySpark, 
-    and AWS services including Glue, S3, Athena, and Redshift.
-  </p>
-
-  <p>
-    AWS Certified Solutions Architect – Associate with strong expertise in ETL and ELT development, data ingestion,
-    transformation, data quality validation, and analytics-ready dataset preparation.
-  </p>
-</section>
-
-
-        <!--
-          - service
-        -->
-
-        <section class="service">
-
-          <h3 class="h3 service-title">What i'm doing</h3>
-
-          <ul class="service-list">
-
-  <li class="service-item">
-    <div class="service-icon-box">
-      <img src="./assets/images/icon-dev.svg" alt="etl icon" width="40">
-    </div>
-    <div class="service-content-box">
-      <h4 class="h4 service-item-title">ETL & Data Pipelines</h4>
-      <p class="service-item-text">
-        Designing and maintaining scalable ETL and ELT pipelines using Python, PySpark, AWS Glue, and SQL.
-      </p>
-    </div>
-  </li>
-
-  <li class="service-item">
-    <div class="service-icon-box">
-      <img src="./assets/images/icon-app.svg" alt="aws icon" width="40">
-    </div>
-    <div class="service-content-box">
-      <h4 class="h4 service-item-title">AWS Data Engineering</h4>
-      <p class="service-item-text">
-        Hands-on experience with AWS S3, Glue, Athena, Redshift, Lambda, EMR, EC2, IAM, and CloudWatch.
-      </p>
-    </div>
-  </li>
-
-  <li class="service-item">
-    <div class="service-icon-box">
-      <img src="./assets/images/icon-photo.svg" alt="data quality icon" width="40">
-    </div>
-    <div class="service-content-box">
-      <h4 class="h4 service-item-title">Data Quality & Optimization</h4>
-      <p class="service-item-text">
-        Implementing data validation, reconciliation logic, incremental processing, and performance optimization.
-      </p>
-    </div>
-  </li>
-
-</ul>
-
-        </section>
-
-        <!--
-          - testimonials and clients sections remain unchanged
-        -->
-
-      </article>
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">B.Tech in Computer Science and Engineering</h4>
-
-              <span>October 2020 — July 2024</span>
-
-              <p class="timeline-text">
-                N B Navale Sinhgad College of Engineering
-                CGPA: 9.1
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-  <h4 class="h4 timeline-item-title">AWS Data Engineer</h4>
-  <span>Aug 2024 — Present</span>
-  <p class="timeline-text">
-    Anura Infotech Pvt. Ltd (CRIF India), Pune<br>
-    • Designed and maintained AWS-based data pipelines using Python, PySpark, Glue, S3, Athena, Redshift, and SQL<br>
-    • Built ETL and ELT workflows for structured and semi-structured data ingestion<br>
-    • Implemented batch-driven workflows with end-to-end monitoring and traceability<br>
-    • Developed data quality checks achieving 98% accuracy in accepted vs rejected records
-  </p>
-</li>
-
-<li class="timeline-item">
-  <h4 class="h4 timeline-item-title">Data Engineer Intern</h4>
-  <span>Feb 2024 — Aug 2024</span>
-  <p class="timeline-text">
-    CRIF Solutions Pvt. Ltd, Pune<br>
-    • Supported data ingestion and transformation using Python and SQL<br>
-    • Performed data cleansing and issue resolution for analytics datasets<br>
-    • Assisted in workflow validation and operational stability
-  </p>
-</li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <ul class="skills-list content-card">
-
-  <li class="skills-item">
-    <div class="title-wrapper">
-      <h5 class="h5">Programming & Data Engineering</h5>
-      <data value="90">Python, SQL, PySpark, ETL, ELT</data>
-    </div>
-    <div class="skill-progress-bg">
-      <div class="skill-progress-fill" style="width: 90%;"></div>
-    </div>
-  </li>
-
-  <li class="skills-item">
-    <div class="title-wrapper">
-      <h5 class="h5">AWS Services</h5>
-      <data value="85">S3, Glue, Athena, Redshift, Lambda, EMR, EC2, IAM</data>
-    </div>
-    <div class="skill-progress-bg">
-      <div class="skill-progress-fill" style="width: 85%;"></div>
-    </div>
-  </li>
-
-  <li class="skills-item">
-    <div class="title-wrapper">
-      <h5 class="h5">Big Data & Warehousing</h5>
-      <data value="80">Apache Spark, Snowflake, Parquet</data>
-    </div>
-    <div class="skill-progress-bg">
-      <div class="skill-progress-fill" style="width: 80%;"></div>
-    </div>
-  </li>
-
-  <li class="skills-item">
-    <div class="title-wrapper">
-      <h5 class="h5">Tools & Platforms</h5>
-      <data value="75">Airflow, dbt, Git, CloudWatch, JSON</data>
-    </div>
-    <div class="skill-progress-bg">
-      <div class="skill-progress-fill" style="width: 75%;"></div>
-    </div>
-  </li>
-
-</ul>
-
-
-        </section>
-
-      </article>
-
-      <!--
-        - The rest of the sections (Portfolio, Blog, Contact) remain largely unchanged
-      -->
-
-    </div>
+    </section>
+
+    <!-- RESUME -->
+    <section id="resume" class="page">
+      <h2>Resume</h2>
+
+      <h3>Experience</h3>
+      <p><strong>AWS Data Engineer</strong> – CRIF India (Aug 2024 – Present)</p>
+      <ul>
+        <li>Designed AWS-based data pipelines using Glue, S3, Athena, and Redshift</li>
+        <li>Built ETL and ELT workflows for structured and semi-structured data</li>
+        <li>Implemented data quality checks with 98 percent accuracy</li>
+      </ul>
+
+      <p><strong>Data Engineer Intern</strong> – CRIF (Feb 2024 – Aug 2024)</p>
+      <ul>
+        <li>Supported ingestion and transformation using Python and SQL</li>
+        <li>Performed data cleansing and validation</li>
+      </ul>
+
+      <h3>Skills</h3>
+      <p>Python, SQL, PySpark, AWS Glue, S3, Athena, Redshift, Airflow, dbt</p>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio" class="page">
+      <h2>Projects</h2>
+      <p><strong>Serverless ETL Pipeline</strong> – AWS Glue, S3, Athena, PySpark</p>
+      <p><strong>Customer & Marketing Analytics Platform</strong> – Glue, Lambda, Airflow, Redshift</p>
+    </section>
+
+    <!-- BLOG -->
+    <section id="blog" class="page">
+      <h2>Blog</h2>
+      <p>Writing about AWS Glue, ETL best practices, and data engineering.</p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="page">
+      <h2>Contact</h2>
+      <p>Email: harshvardhankonda@gmail.com</p>
+      <p>LinkedIn: linkedin.com/in/harshvardhankonda</p>
+    </section>
 
   </main>
+</div>
 
-  <!--
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+<!-- INTERNAL JS -->
+<script>
+  const buttons = document.querySelectorAll(".nav-btn");
+  const pages = document.querySelectorAll(".page");
 
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  buttons.forEach(btn => {
+    btn.addEventListener("click", () => {
+      buttons.forEach(b => b.classList.remove("active"));
+      pages.forEach(p => p.classList.remove("active"));
+
+      btn.classList.add("active");
+      document.getElementById(btn.dataset.target).classList.add("active");
+    });
+  });
+</script>
 
 </body>
-
 </html>
