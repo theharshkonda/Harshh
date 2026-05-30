@@ -1,0 +1,7 @@
+A new responsive-styles spec (`tests/playwright/sanity/modules/v4-tests/styles-editing/responsive-styles.test.ts`) was added to the V4 atomic widget Playwright suite, but it currently fails at import time and at runtime.
+
+**Import failure:** The spec does `import { BorderTypeLabel, OffsetLabel, SizeSectionLabel } from '../../../../pages/atomic-elements-panel/style-tab'` but those three enums are declared without the `export` keyword in `tests/playwright/pages/atomic-elements-panel/style-tab.ts`. Each of them needs to be exported so the spec can resolve its imports. Other enums in that file (`FontSizeLabel`, `DisplayValue`) are intentionally module-private and should stay that way.
+
+**Runtime failure in the e-image border-type test:** Even once imports resolve, the image-widget border breakpoint test fails because `setBorderType()` passes its `border` argument directly to the `changeSelectControl` helper. The `BorderTypeLabel` enum values are title-case strings like `'Solid'`, `'Dashed'`, etc., but the panel's select control uses lowercase CSS keywords (`'solid'`, `'dashed'`, ...) as its data-values. The method needs to lowercase the enum value before passing it to `changeSelectControl`.
+
+Your changes are limited to `style-tab.ts`. The evaluation specs themselves (the responsive-styles spec and a companion `self-hosted-video.test.ts`) are supplied by the verifier and must not be modified.

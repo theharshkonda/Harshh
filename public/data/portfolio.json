@@ -1,0 +1,125 @@
+{
+  "name": "Harshvardhan Konda",
+  "title": "AWS Data Engineer | Python | Generative AI | PySpark | SQL",
+  "location": "Pune, Maharashtra, India",
+  "headline": "Building scalable ETL pipelines,",
+  "subheadline": "cloud data solutions, and AI workflows",
+  "heroMetrics": [
+    { "label": "Experience", "value": "2 Years" },
+    { "label": "Data quality accuracy", "value": "98%+" },
+    { "label": "B.Tech CGPA", "value": "9.11" }
+  ],
+  "about": {
+    "intro": "Software Engineer with 2 years of experience building scalable ETL pipelines, cloud-based data solutions, and automation workflows using Python, SQL, PySpark, and AWS services. Experienced in AWS Glue, S3, Redshift, Athena, Lambda, and distributed data processing frameworks. Familiar with Generative AI concepts, prompt engineering, and LLM fundamentals applied to AI workflows. Strong understanding of data engineering, automation scripting, DevOps fundamentals, and scalable application development.",
+    "highlights": [
+      "Experienced in AWS Glue, S3, Redshift, Athena, Lambda, and distributed data processing frameworks.",
+      "Familiar with Generative AI concepts, prompt engineering, and LLM fundamentals applied to AI workflows.",
+      "Strong understanding of data engineering, automation scripting, DevOps fundamentals, and scalable application development."
+    ],
+    "timeline": [
+      {
+        "year": "Feb 2024",
+        "title": "Started at CRIF Solutions Pvt. Ltd as Data Engineer Intern",
+        "description": "Supported data ingestion, transformation, validation, and batch processing workflows using Python and SQL."
+      },
+      {
+        "year": "Aug 2024",
+        "title": "Joined Anura Infotech Pvt. Ltd (CRIF India) as Software Engineer",
+        "description": "Designed and maintained AWS-based data pipelines using Python, PySpark, AWS Glue, S3, Athena, Redshift, and SQL."
+      },
+      {
+        "year": "Present",
+        "title": "Building ETL, ELT, validation, and automation workflows",
+        "description": "Focused on scalable data pipelines, data quality, incremental processing, monitoring, and reusable data components."
+      }
+    ]
+  },
+  "skills": {
+    "Programming Languages": ["Python", "SQL", "PySpark"],
+    "Data Engineering": ["ETL", "ELT", "Data Pipelines", "Data Ingestion", "Data Processing", "Data Validation", "Data Quality", "Batch Processing", "Incremental Processing"],
+    "Cloud Platforms (AWS)": ["AWS Glue", "S3", "Redshift", "Athena", "Lambda", "EMR", "EC2", "IAM", "RDS", "CloudWatch"],
+    "Big Data & Databases": ["Apache Spark", "Redshift", "Snowflake", "Parquet"],
+    "Generative AI & AI Tools": ["Prompt Engineering", "LLM Fundamentals", "Generative AI Basics", "Hugging Face", "OpenAI APIs", "Claude Code", "GitHub Copilot"],
+    "DevOps & Tools": ["Git", "Airflow", "dbt", "Docker", "CI/CD Fundamentals", "Linux Basics"],
+    "Other Skills": ["Automation Scripting", "API Integration", "Debugging", "Monitoring", "Version Control"]
+  },
+  "experience": [
+    {
+      "company": "Anura Infotech Pvt. Ltd (CRIF India)",
+      "role": "Software Engineer",
+      "period": "Aug 2024 - Present",
+      "achievements": [
+        "Designed and maintained scalable AWS-based data pipelines using Python, PySpark, AWS Glue, S3, Athena, Redshift, and SQL to support analytics and reporting use cases.",
+        "Built ETL and ELT workflows to ingest, parse, standardize, and load structured and semi-structured data from multiple source systems and file formats.",
+        "Developed Python-based automation scripts for data validation, monitoring, and workflow optimization, reducing manual intervention in pipeline operations.",
+        "Optimized SQL queries and PySpark transformations to improve performance, scalability, and reliability of pipelines.",
+        "Implemented batch-driven workflows with batch ID generation, lifecycle tracking, and end-to-end monitoring for data traceability.",
+        "Performed data parsing, cleansing, standardization, enrichment, and validation to produce analytics-ready datasets.",
+        "Implemented incremental processing logic using Insert, Update, and Variation strategies to support historical and delta-based data updates.",
+        "Developed data quality checks and reconciliation logic, achieving over 98% accuracy in accepted versus rejected records.",
+        "Collaborated with cross-functional engineering teams to troubleshoot pipeline failures, debug issues, and improve system reliability and operational stability.",
+        "Built reusable and modular data processing components following coding best practices and Git-based version control workflows."
+      ]
+    },
+    {
+      "company": "CRIF Solutions Pvt. Ltd",
+      "role": "Data Engineer Intern",
+      "period": "Feb 2024 - Aug 2024",
+      "achievements": [
+        "Supported data ingestion, transformation, and processing tasks using Python and SQL across analytics workflows.",
+        "Performed data cleansing and issue resolution to maintain data accuracy for downstream reporting datasets.",
+        "Assisted in building and maintaining data workflows, automation scripts, and validation checks.",
+        "Worked closely with engineering teams to ensure data accuracy, pipeline stability, and operational efficiency.",
+        "Supported ETL workflow execution and monitored batch processing jobs for smooth data pipeline operations.",
+        "Assisted in SQL query optimization and data validation activities to improve reporting accuracy and processing efficiency."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "name": "Serverless ETL Pipeline Using AWS Glue, S3, and Athena",
+      "summary": "Built a serverless ETL pipeline to ingest structured and semi-structured data into Amazon S3, transform it with PySpark, and enable serverless querying using Amazon Athena.",
+      "demoLabel": "Serverless ETL",
+      "metrics": ["Serverless architecture", "Automated schema discovery", "Optimized Parquet datasets"],
+      "tech": ["AWS Glue", "Amazon S3", "Athena", "PySpark", "SQL", "Parquet", "AWS Glue Crawlers"],
+      "architecture": ["Source Data", "Glue + PySpark", "S3 + Athena"]
+    },
+    {
+      "name": "Customer and Marketing Analytics Platform",
+      "summary": "Developed end-to-end ETL pipelines and data lake architecture to support customer behavior and marketing insights.",
+      "demoLabel": "Analytics Platform",
+      "metrics": ["End-to-end ETL pipelines", "Lake and lakehouse design", "Quality and access controls"],
+      "tech": ["AWS Glue", "PySpark", "AWS Lambda", "Apache Airflow", "Amazon S3", "Amazon Redshift", "EMR", "SQL"],
+      "architecture": ["Source Systems", "ETL Orchestration", "Analytics Lakehouse"]
+    },
+    {
+      "name": "AI Resume Assistant",
+      "summary": "Built a GenAI-based resume assistant capable of generating resume summaries and job-specific skill recommendations using LLMs.",
+      "demoLabel": "GenAI Resume Assistant",
+      "metrics": ["Resume summaries", "Job-specific recommendations", "Interactive Streamlit UI"],
+      "tech": ["Python", "OpenAI API", "Prompt Engineering", "Streamlit", "Pandas"],
+      "architecture": ["Resume Input", "LLM Processing", "Structured Output"]
+    }
+  ],
+  "certifications": [
+    { "title": "AWS Certified Solutions Architect - Associate (SAA-C03)", "issuer": "Amazon Web Services", "year": "" },
+    { "title": "Data Engineering on AWS - Foundations", "issuer": "AWS Training & Certification", "year": "" },
+    { "title": "AWS Cloud Practitioner Essentials", "issuer": "AWS Training & Certification", "year": "" },
+    { "title": "Google Cloud - Generative AI Fundamentals Skill Badge", "issuer": "Google Cloud", "year": "" }
+  ],
+  "education": [
+    {
+      "institution": "N B Navale Sinhgad College of Engineering",
+      "degree": "B.Tech : Computer Science And Engineering (CSE)",
+      "period": "Sept 2020 - June 2024",
+      "detail": "CGPA : 9.11"
+    }
+  ],
+  "contact": [
+    { "label": "Phone", "value": "+91-9527728149", "href": "tel:+919527728149" },
+    { "label": "Email", "value": "harshkonda2002@gmail.com", "href": "mailto:harshkonda2002@gmail.com" },
+    { "label": "LinkedIn", "value": "LinkedIn" },
+    { "label": "Location", "value": "Pune, Maharashtra, India" },
+    { "label": "Resume", "value": "Download PDF", "href": "./Harshvardhan_Konda_AI.pdf" }
+  ]
+}

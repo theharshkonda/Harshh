@@ -1,0 +1,28 @@
+version = "1.0"
+
+[metadata]
+author_name = "anonymous"
+author_email = "anonymous@snorkel.ai"
+difficulty = "hard"
+category = "fix"
+tags = ["playwright", "page-objects", "typescript", "enum-export", "border-style", "test-infrastructure"]
+source = "https://github.com/elementor/elementor/pull/35514"
+language = "typescript"
+expert_time_estimate_min = 10.0
+junior_time_estimate_min = 35.0
+claude_sonnet_4_5_20250929_v1_0_accuracy = 1.0
+gpt_5_accuracy = 0.0
+pr_created_at = "2026-04-17T10:49:52Z"
+pr_merged_at = "2026-04-23T12:42:00Z"
+
+[verifier]
+timeout_sec = 300.0
+
+[agent]
+timeout_sec = 1800.0
+
+[environment]
+build_timeout_sec = 900.0
+cpus = 2
+memory_mb = 8192
+storage_mb = 10240

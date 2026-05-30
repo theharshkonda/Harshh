@@ -1,0 +1,29 @@
+{
+    "id": "9e7ebc08-462d-461a-bb99-283a40026a3d",
+    "started_at": "2026-05-04T22:27:43.209444",
+    "finished_at": "2026-05-04T22:28:31.163652",
+    "n_total_trials": 1,
+    "stats": {
+        "n_trials": 1,
+        "n_errors": 0,
+        "evals": {
+            "terminus-2__@openai-gpt-5-2025-08-07__adhoc": {
+                "n_trials": 1,
+                "n_errors": 0,
+                "metrics": [
+                    {
+                        "mean": 0.0
+                    }
+                ],
+                "reward_stats": {
+                    "reward": {
+                        "0.0": [
+                            "boosted__67ARuKB"
+                        ]
+                    }
+                },
+                "exception_stats": {}
+            }
+        }
+    }
+}
